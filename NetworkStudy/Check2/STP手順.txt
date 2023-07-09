@@ -1,0 +1,16 @@
+１、STPがどこのVLANに適用されているか確認する。
+show spanning-tree
+
+２、VLAN10を両方のスイッチで作成する。
+
+３、PCにつながるポートをアクセスポートに変更しVLAN10に設定する。
+
+４、スイッチ同士をつなげるポートをトランクポートに変更し、VLAN10の通過を許可する。
+
+５、STPをVLAN1で無効化する。
+no spanning-tree vlan [vlan番号]
+
+６、STPがVLAN10のみ有効化されているか確認する。
+show spanning-tree
+
+７、PC0からPC1にpingが通るか確認し、ブロードキャストフレームも確認する。
