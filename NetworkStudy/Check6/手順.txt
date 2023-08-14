@@ -1,0 +1,14 @@
+１、スイッチの各ポートをアクセスモード、VLANを10に設定する。
+
+２、それぞれのPCへポートセキュリティの設定を行う。
+witchport port-security
+switchport port-security maximum [最大数]
+switchport port-security mac-address [MACアドレス]
+
+３、それぞれのPCとサーバにIPアドレスとデフォルトゲートウェイを割り当て、ルータのインターフェースにもIPアドレスを割り当てる。
+
+
+４、サーバとルータにAAA、Radiusの設定をする。
+aaa new-model
+aaa authentication login default group radius local
+radius-server host 192.168.1.100 key rad
