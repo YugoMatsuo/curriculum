@@ -1,0 +1,24 @@
+/* CSSファイル */
+#wrapper { /* 共通の処理 */
+
+}
+
+.header { 
+    border: solid 1px #999;
+    background-color: yellow;
+    height: 100px;
+
+}
+
+.main {
+    border: solid 1px #999;
+    background-color: skyblue;
+    height: 300px;
+
+}
+
+.footer {
+    border: solid 1px #999;
+    background-color: pink;
+    height: 100px;
+}
